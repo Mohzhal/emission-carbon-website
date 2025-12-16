@@ -127,7 +127,7 @@ const EmissionMonitor = () => {
       }
     } catch (error) {
       console.error('❌ Error:', error);
-      alert('Gagal terhubung ke server. Pastikan backend berjalan di http://localhost:3001');
+      alert('Gagal terhubung ke server. Backend cloud tidak dapat diakses.');
     } finally {
       setLoading(false);
     }
