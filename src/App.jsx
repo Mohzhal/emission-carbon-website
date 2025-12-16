@@ -3,8 +3,8 @@ import { Activity, Wind, Play, Square, Save, Printer, Clock, History, X, AlertTr
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import io from 'socket.io-client';
 
-const API_BASE_URL = 'https://emission-backend-971414205076.asia-southeast2.run.app/api';
-const SOCKET_URL = 'https://emission-backend-971414205076.asia-southeast2.run.app';
+const API_BASE_URL = 'http://localhost:3001/api';
+const SOCKET_URL = 'http://localhost:3001';
 
 const EmissionMonitor = () => {
   const [socket, setSocket] = useState(null);
